@@ -4,6 +4,7 @@ import Header from './components/layout/Header'
 import Todos from './components/Todos';
 import AddTodo from './components/AddTodo';
 import About from './components/pages/About';
+import ScrollToTopBtn from "./ScrollToTop";
 import uuid from 'uuid';
 import './App.css';
 
@@ -33,7 +34,7 @@ class App extends Component{
     this.setState({todos: this.state.todos.map(todo => {
       if(todo.id === id){
         todo.completed = !todo.compeleted
-      
+
       }
       return todo;
     }) });
@@ -53,12 +54,13 @@ class App extends Component{
      }
      this.setState({ todos: [...this.state.todos, newTodo] })
     }
-  
+
   render() {
    return (
     <Router>
      <div className="App">
       <div className="container">
+      <ScrollToTopBtn />
       <Header />
       <Route exact path="/" render={props => (
         <React.Fragment>
@@ -74,6 +76,5 @@ class App extends Component{
    );
   }
  }
- 
+
  export default App;
- 
