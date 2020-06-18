@@ -17,7 +17,7 @@ html {
 }
 
 .App{
-min-height: 55em;
+min-height: 100em;
 }
 
 
@@ -30,6 +30,13 @@ body{
 
 
 }
+
+/* Navbar */
+
+.Logo {
+  background-image: url(./components/images/arrow1.png);
+}
+
 
 /* Scroll to Top */
 
