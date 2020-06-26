@@ -21,6 +21,7 @@ export class TodoItem extends Component {
          <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>x</button>
         </p>
       </div>
+      
     )
   }
 }
@@ -29,7 +30,7 @@ export class TodoItem extends Component {
 TodoItem.propTypes = {
     todo: PropTypes.object.isRequired
   }
- 
+
   const btnStyle = {
     background: 'red',
     color: 'white',

@@ -4,7 +4,8 @@ import Header from './components/layout/Header'
 import Todos from './components/Todos';
 import AddTodo from './components/AddTodo';
 import About from './components/pages/About';
-import ScrollToTopBtn from "./ScrollToTop";
+import ScrollToTopBtn from './ScrollToTop';
+import Logo from './components/images/arrow1.png';
 import uuid from 'uuid';
 import './App.css';
 
